@@ -12,11 +12,11 @@ my constant @OF =
     (0x30000..0x3134A), # CJK Unified Ideographs Extension G
 ;
 
-my constant @TO = @OF.map: *.bounds.map({ $^a.chr .. $^b.chr });
+my constant @TO = @OF.map: *.bounds.map(*.chr .. *.chr);
 
-my constant %OF = Map.new: @OF.flat.map({ $++ => $^codepoint.chr });
+my constant %OF = Map.new: @OF.flat.kv.map(* => *.chr);
 
-my constant %TO = Map.new: @TO.flat.map({ $^codepoint => $++ });
+my constant %TO = Map.new: @TO.flat.antipairs;
 
 subset String of Str:D where .comb.all ~~ %TO;
 
