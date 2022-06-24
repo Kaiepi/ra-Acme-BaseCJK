@@ -1,0 +1,8 @@
+use Test;
+use Acme::BaseCJK;
+
+plan 2;
+
+is CJK:to(CJK:of($_)), $_,
+  "base CJK is idempotent for 0x$_.base(16)"
+    for (0x15A1DBAD, 0x1FACEB0B1D1EB00000);

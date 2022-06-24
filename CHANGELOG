@@ -1,0 +1,5 @@
+Revision history for Acme::BaseCJK
+
+v0.0.1
+    - Implement a base 92 844 encoding with Unicode 13.0.0 CJK Unified
+      Ideographs and its extensions.

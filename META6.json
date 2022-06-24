@@ -1,0 +1,18 @@
+{
+  "auth": "zef:Kaiepi",
+  "authors": ["Ben Davies"],
+  "build-depends": [],
+  "depends": [],
+  "description": "More digits for more better",
+  "license": "Artistic-2.0",
+  "name": "Acme::BaseCJK",
+  "perl": "6",
+  "provides": {
+    "Acme::BaseCJK": "lib/Acme/BaseCJK.rakumod"
+  },
+  "resources": [],
+  "source-url": "https://github.com/Kaiepi/ra-Acme-BaseCJK.git",
+  "tags": [],
+  "test-depends": [],
+  "version": "0.0.1"
+}
