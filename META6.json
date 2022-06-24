@@ -14,5 +14,6 @@
   "source-url": "https://github.com/Kaiepi/ra-Acme-BaseCJK.git",
   "tags": [],
   "test-depends": [],
-  "version": "0.0.1"
+  "version": "0.0.1",
+  "api": "13.0.0"
 }
