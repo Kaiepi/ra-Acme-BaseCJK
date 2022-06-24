@@ -14,9 +14,9 @@ my constant @OF =
 
 my constant @TO = @OF.map: *.bounds.map(*.chr .. *.chr);
 
-my constant %OF = Map.new: @OF.flat.kv.map(* => *.chr);
+my constant %OF = @OF.flat.kv.map(* => *.chr);
 
-my constant %TO = Map.new: @TO.flat.antipairs;
+my constant %TO = @TO.flat.antipairs;
 
 subset String of Str:D where .comb.all ~~ %TO;
 
